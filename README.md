@@ -1,3 +1,4 @@
+
 # HieroLingo
 
 Your personal hieroglyph translator!
@@ -17,7 +18,7 @@ https://hierolingo.netlify.app/
 
 ## Screenshots
 
-![App Screenshot](src/og-image.png)
+![App Screenshot](https://github.com/Sparrow-90/HieroLingo/blob/main/assets/og-image.png)
 
 
 ## Tech Stack
@@ -31,3 +32,4 @@ https://hierolingo.netlify.app/
 
 - Progressive Web Apps (PWA)
 - working on webbrowser and mobile
+
