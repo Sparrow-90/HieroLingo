@@ -575,6 +575,59 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"gLLPy":[function(require,module,exports) {
+const nameToGlyphsMap = {
+    "A": "\uD80C\uDD3F\uD80C\uDC9D",
+    "B": "\uD80C\uDCC0",
+    "C": "\uD80C\uDFA0",
+    "D": "\uD80C\uDCA7",
+    "E": "\uD80C\uDDB8",
+    "F": "\uD80C\uDD91",
+    "G": "\uD80C\uDFBC",
+    "H": "\uD80C\uDF9B\uD80C\uDE54",
+    "I": "\uD80C\uDDCB",
+    "J": "\uD80C\uDD93",
+    "K": "\uD80C\uDFAA",
+    "L": "\uD80C\uDCED",
+    "M": "\uD80C\uDD53",
+    "N": "\uD80C\uDE16",
+    "O": "\uD80C\uDF6F",
+    "P": "\uD80C\uDEAA",
+    "Q": "\uD80C\uDE0E",
+    "R": "\uD80C\uDC8B",
+    "S": "\uD80C\uDEF4",
+    "T": "\uD80C\uDFCF",
+    "U": "\uD80C\uDD68",
+    "V": "\uD80C\uDD91",
+    "W": "\uD80C\uDD71\uD80C\uDF62",
+    "X": "\uD808\uDC17",
+    "Y": "\uD80C\uDDCC",
+    "Z": "\uD80C\uDFE0"
+};
+const button = document.querySelector(".button--js");
+const nameInput = document.querySelector(".input--js");
+nameInput.addEventListener("click", function() {
+    this.value = "";
+});
+function translateNameToHieroglyph() {
+    const output = document.querySelector(".output--js");
+    const name = nameInput.value.toUpperCase();
+    let glyphs = "";
+    for(let i = 0; i < name.length; i++){
+        const letter = name[i];
+        if (letter in nameToGlyphsMap) glyphs += nameToGlyphsMap[letter];
+    }
+    output.innerText = glyphs;
+}
+button.addEventListener("click", translateNameToHieroglyph);
+function actionTranslate(event) {
+    switch(event.key){
+        case "Enter":
+            console.log("dzia\u0142a");
+            translateNameToHieroglyph();
+            break;
+    }
+}
+window.addEventListener("keydown", actionTranslate);
 
 },{}]},["3zq8u","gLLPy"], "gLLPy", "parcelRequirea02f")
 
