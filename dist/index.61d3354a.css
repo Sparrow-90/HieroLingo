@@ -467,11 +467,6 @@ img, video {
   transition-duration: .3s;
 }
 
-.hover\:bg-coffee:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(140 113 88 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gradient-to-bl:hover {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
