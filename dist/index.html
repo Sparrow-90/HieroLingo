@@ -9,22 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body class="font-oswald">
-    <header>
-        <h1>HieroLingo</h1>
-        <p>Your personal hieroglyph translator</p>
+<body class="font-oswald w-screen bg-myBg flex flex-col items-center">
+    <header class="mt-8 mb-8">
+        <h1 class="text-3xl text-white text-center">HieroLingo</h1>
+        <p class="text-lg text-white">Your personal hieroglyph translator</p>
     </header>
-    <main>
-        <section>
-            <div class="output--js">
+        <main class="w-80 bg-white flex flex-col">
+            <section class="output--js w-full h-72 bg-coffee">
 
-            </div>
-            <div>
-                <input type="text" id="name-input" value="your name" maxlength="25">
-                <button class="button--js">translate</button>
-            </div>
-        </section>
-    </main>
+            </section>
+            <section class="flex flex-col items-center mt-8">
+                <input class="w-72 h-16 drop-shadow-xl text-2xl text-center p-4 mb-9" type="text" id="name-input" value="write your name" maxlength="25">
+                <button class="button--js bg-myBg text-white w-40 h-12 text-2xl mb-20 flex justify-center items-center">translate</button>
+            </section>
+        </main>
 
     <script src="/index.4d6bcbeb.js" defer=""></script>
 </body>
