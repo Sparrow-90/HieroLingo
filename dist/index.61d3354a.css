@@ -281,6 +281,22 @@ img, video {
   margin-inline-end: .5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: .5rem;
+}
+
+.mt-1 {
+  margin-top: .25rem;
+}
+
+.mb-1 {
+  margin-bottom: .25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -331,6 +347,22 @@ img, video {
 
 .w-40 {
   width: 10rem;
+}
+
+.w-11 {
+  width: 2.75rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .border-spacing-1 {
@@ -407,6 +439,10 @@ img, video {
 
 .border-b-4 {
   border-bottom-width: 4px;
+}
+
+.border-dotted {
+  border-style: dotted;
 }
 
 .border-double {
