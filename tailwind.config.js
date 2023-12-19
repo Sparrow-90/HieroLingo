@@ -11,7 +11,10 @@ module.exports = {
       },
       fontFamily: {
         'oswald' : ['Oswald', 'sans-serif']
-      }
+      },
+      strokeWidth: {
+        '4' : '4px', 
+      },
     },
   },
   plugins: [],
